@@ -105,6 +105,7 @@ const elementosCadena = [
 
     if (opcion === 'correcta') {
       setRespuesta1('correcta')
+      new Audio('/aplausos.mp3').play()
       setPuntos((actual) => actual + 100)
       setMision1Completa(true)
     } else {
@@ -141,6 +142,7 @@ const elementosCadena = [
 
     if (todasCorrectas) {
       setMensaje2('correcta')
+      new Audio('/aplausos.mp3').play()
       setPuntos((actual) => actual + 150)
       setMision2Completa(true)
     } else {
@@ -179,6 +181,7 @@ const revisarMision3 = () => {
 
   if (seleccionCorrecta) {
     setMensaje3('correcta')
+    new Audio('/aplausos.mp3').play()
     setPuntos((actual) => actual + 150)
     setMision3Completa(true)
   } else {
@@ -207,6 +210,7 @@ const revisarMision4 = () => {
 
   if (esCorrecta) {
     setMensaje4('correcta')
+    new Audio('/aplausos.mp3').play()
     setPuntos((actual) => actual + 200)
     setMision4Completa(true)
   } else {
@@ -992,6 +996,7 @@ if (pantalla === 'mision5') {
     setRespuesta5('correcta')
 
     if (!mision5Completa) {
+      new Audio('/aplausos.mp3').play()
       setPuntos(puntos + 100)
       setMision5Completa(true)
     }
@@ -1105,6 +1110,7 @@ if (pantalla === 'mision6') {
     setRespuesta6('correcta')
 
     if (!mision6Completa) {
+      new Audio('/aplausos.mp3').play()
       setPuntos((puntosAnteriores) => puntosAnteriores + 100)
       setMision6Completa(true)
     }
@@ -1220,6 +1226,7 @@ if (pantalla === 'mision7') {
                   setRespuesta7('correcta')
 
                   if (!mision7Completa) {
+                    new Audio('/aplausos.mp3').play()
                     setPuntos(puntos + 100)
                     setMision7Completa(true)
                   }
@@ -1300,6 +1307,7 @@ if (pantalla === 'mision8') {
     if (pregunta8 < 3) {
       setPregunta8((anterior) => anterior + 1)
     } else {
+      new Audio('/aplausos.mp3').play()
       setMision8Completa(true)
     }
   }
@@ -1478,6 +1486,7 @@ if (pantalla === 'mision9') {
     setCompromiso9(compromiso)
 
     if (!mision9Completa) {
+      new Audio('/aplausos.mp3').play()
       setPuntos((anteriores) => anteriores + 100)
       setMision9Completa(true)
     }
@@ -1612,6 +1621,7 @@ if (pantalla === 'mision10') {
       setPregunta10((anterior) => anterior + 1)
     } else {
       if (!mision10Completa) {
+        new Audio('/aplausos.mp3').play()
         setPuntos((anteriores) => anteriores + 200)
         setMision10Completa(true)
       }
